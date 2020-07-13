@@ -46,10 +46,10 @@ class Directory extends Component{
         return(
         <div className='directory-menu'>
             {
-                this.state.sections.map(({imageUrl,id,title,size})=>(<MenuItem title={title.toUpperCase()} imageUrl={imageUrl}key={id} size={size }></MenuItem>))
+                this.state.sections.map(({id, ...otherComponents})=>(<MenuItem key={id} {...otherComponents}></MenuItem>))
             }
         </div>
         )
     }
 }  
-export default Directory;
+export default Directory; 
