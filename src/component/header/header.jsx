@@ -26,4 +26,4 @@ const mapStateToProps=(state)=>{
     return({
         currentUser :state.user.currentUser
 })};
-export default connect(mapStateToProps)( Header);
+export default connect(mapStateToProps)(Header);
