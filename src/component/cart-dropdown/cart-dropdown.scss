@@ -10,12 +10,14 @@
     top: 90px;
     right: 40px;
     z-index: 5;
-  
+    align-items: flex-start;
     .cart-items {
       height: 240px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
+      justify-content: space-evenly;
+      
     }
   
     button {

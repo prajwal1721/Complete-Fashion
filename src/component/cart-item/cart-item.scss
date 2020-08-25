@@ -1,0 +1,16 @@
+.cart-item{
+    display: flex; 
+    img{
+        height: 60px;
+        width: 60px;
+        padding-right: 10px;
+    }
+    &.img-container{
+        margin-left: 50px;
+    }
+}
+.item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

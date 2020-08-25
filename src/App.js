@@ -26,8 +26,7 @@ class App extends React.Component{
           });
           
         });
-      }
-      
+      } 
       // this part has some doubt his video doesn't match
       else{
         setCurrentUser(userAuth);
@@ -46,6 +45,7 @@ class App extends React.Component{
       <Switch>
         <Route exact component={HomePage} path='/'/>
         <Route exact component={ShopPage} path='/shop'/>
+        <Route exact component={ShopPage} path='/checkout'/>
         <Route exact 
         render={()=>this.props.currentUser?(<Redirect to='/'/>):(<SignInandSignout/>)} 
         path='/signin'/>
