@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import {SignInandSignout} from './page/sign-in-and-sign-up/sign-in-sign-out'
 import {Route,Switch,Redirect } from 'react-router-dom';
+import CheckoutPage from './page/checkout/checkout';
 import Header from './component/header/header';
 import {HomePage} from './page/hompage/homepage';
 import ShopPage from './page/shoppage/ShopPage';
@@ -47,7 +48,7 @@ class App extends React.Component{
       <Switch>
         <Route exact component={HomePage} path='/'/>
         <Route exact component={ShopPage} path='/shop'/>
-        <Route exact component={ShopPage} path='/checkout'/>
+        <Route exact component={CheckoutPage} path='/checkout'/>
         <Route exact 
         render={()=>this.props.currentUser?(<Redirect to='/'/>):(<SignInandSignout/>)} 
         path='/signin'/>
