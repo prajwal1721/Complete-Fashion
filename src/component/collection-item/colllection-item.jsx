@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {addItem} from '../../redux/cart/cart.action';
 import './collection-item.scss';
 import  CustomButton from '../button/custombutton';
-export const CollectionItem=({item,addItem})=>{
+ const CollectionItem=({item,addItem})=>{
     //console.log(item);
     const { name ,price ,imageUrl}=item;
     return (
@@ -14,7 +14,7 @@ export const CollectionItem=({item,addItem})=>{
         </div>
         <div className='collection-footer'>
             <span className='name'>{name}</span>
-            <span className='price'>{`$${price}`}</span>
+            <span className='price'>{`$ ${price}`}</span>
         </div>
         <CustomButton onClick={()=>addItem(item )} cartButton='true' >Add to Cart</CustomButton>
 </div>
